@@ -1,0 +1,29 @@
+{
+  "name": "jabami",
+  "version": "1.0.0",
+  "description": "Hentai desu official Discord bot",
+  "main": "dist/app.js",
+  "scripts": {
+    "prestart": "rm -rf ./dist && tsc",
+    "start": "node ."
+  },
+  "author": "Masami",
+  "license": "MIT",
+  "bugs": "https://github.com/Masami45/jabami-yumeko/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Masami45/jabami-yumeko.git"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "canvas": "^2.6.0",
+    "canvas-constructor": "^3.1.0",
+    "dotenv": "^8.1.0",
+    "eris": "^0.10.1",
+    "util": "^0.12.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^12.7.5"
+  }
+}

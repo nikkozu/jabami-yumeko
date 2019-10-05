@@ -1,0 +1,10 @@
+"use strict";
+module.exports = async (client) => {
+    console.log(`[ONLINE] ${client.user.username} berhasil online di ${client.guilds.size} server.`);
+    setInterval(() => {
+        let status = ["Hentai Desu", "Under Development"];
+        let random = client.utils.getRandInt(status.length);
+        client.editStatus('dnd', { name: status[random] });
+    }, 1e4);
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVhZHkuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi9zcmMvZXZlbnRzL3JlYWR5LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFFQSxpQkFBUyxLQUFLLEVBQUUsTUFBYyxFQUFFLEVBQUU7SUFDOUIsT0FBTyxDQUFDLEdBQUcsQ0FBQyxZQUFZLE1BQU0sQ0FBQyxJQUFJLENBQUMsUUFBUSx1QkFBdUIsTUFBTSxDQUFDLE1BQU0sQ0FBQyxJQUFJLFVBQVUsQ0FBQyxDQUFDO0lBRWpHLFdBQVcsQ0FBQyxHQUFHLEVBQUU7UUFDYixJQUFJLE1BQU0sR0FBYSxDQUFDLGFBQWEsRUFBRSxtQkFBbUIsQ0FBQyxDQUFDO1FBQzVELElBQUksTUFBTSxHQUFXLE1BQU0sQ0FBQyxLQUFLLENBQUMsVUFBVSxDQUFDLE1BQU0sQ0FBQyxNQUFNLENBQUMsQ0FBQztRQUU1RCxNQUFNLENBQUMsVUFBVSxDQUFDLEtBQUssRUFBRSxFQUFFLElBQUksRUFBRSxNQUFNLENBQUMsTUFBTSxDQUFDLEVBQUUsQ0FBQyxDQUFDO0lBQ3ZELENBQUMsRUFBRSxHQUFHLENBQUMsQ0FBQztBQUNaLENBQUMsQ0FBQSJ9
